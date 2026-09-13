@@ -4,7 +4,7 @@ import { TrackerError, ErrorCodes } from "../utils/errors.js";
 // required, no server-side proxy needed. If this endpoint ever changes or
 // becomes unreachable directly from the browser, only this file needs to
 // change — see js/api/api-provider.js for the abstraction boundary.
-const ENDPOINT_BASE = "https://servers-frontend.fivem.net/api/servers/single";
+const ENDPOINT_BASE = "https://frontend.cfx-services.net/api/servers/single";
 
 const REQUEST_TIMEOUT_MS = 8000;
 
