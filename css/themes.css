@@ -1,0 +1,82 @@
+/*
+  Design tokens.
+  Palette rationale: a night-drive HUD rather than a generic dark-mode SaaS
+  panel — background is blue-charcoal (not flat black), with three
+  distinct signal colours doing real semantic work (green = online/good,
+  amber = caution/attention, blue = interactive) instead of one accent
+  reused everywhere.
+*/
+
+:root,
+[data-theme="dark"] {
+  --bg: #0b0e14;
+  --bg-elevated: #0f131c;
+  --surface: #131826;
+  --surface-2: #1a2032;
+  --border: #232a3d;
+  --border-strong: #303954;
+
+  --text: #e8ecf4;
+  --text-muted: #8891a5;
+  --text-faint: #5b6376;
+
+  --accent-green: #35d28a;
+  --accent-green-bg: rgba(53, 210, 138, 0.12);
+  --accent-amber: #ffb020;
+  --accent-amber-bg: rgba(255, 176, 32, 0.14);
+  --accent-blue: #4c8dff;
+  --accent-blue-bg: rgba(76, 141, 255, 0.14);
+  --accent-red: #ff5470;
+  --accent-red-bg: rgba(255, 84, 112, 0.14);
+
+  --shadow-color: rgba(0, 0, 0, 0.35);
+}
+
+[data-theme="light"] {
+  --bg: #f4f6fb;
+  --bg-elevated: #ffffff;
+  --surface: #ffffff;
+  --surface-2: #eef1f8;
+  --border: #dde2ee;
+  --border-strong: #c4cbdd;
+
+  --text: #12141c;
+  --text-muted: #5b6172;
+  --text-faint: #8890a0;
+
+  --accent-green: #16965f;
+  --accent-green-bg: rgba(22, 150, 95, 0.1);
+  --accent-amber: #b8720a;
+  --accent-amber-bg: rgba(184, 114, 10, 0.12);
+  --accent-blue: #2f6fe0;
+  --accent-blue-bg: rgba(47, 111, 224, 0.1);
+  --accent-red: #d43a58;
+  --accent-red-bg: rgba(212, 58, 88, 0.1);
+
+  --shadow-color: rgba(20, 24, 40, 0.08);
+}
+
+:root {
+  --font-display: "Space Grotesk", "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  --radius-sm: 5px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-pill: 999px;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  --max-width: 960px;
+
+  --transition-fast: 120ms ease;
+  --transition-med: 200ms ease;
+}

@@ -1,0 +1,50 @@
+/* Mobile is the default in main.css/components.css. These rules layer on
+   improvements for wider screens rather than squeezing a desktop layout
+   down. */
+
+@media (max-width: 640px) {
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .player-row {
+    grid-template-columns: 40px 1fr auto;
+  }
+
+  .player-row .p-ping {
+    display: none;
+  }
+
+  .server-card__actions .btn span.btn-label-full {
+    display: none;
+  }
+
+  .topbar__inner {
+    padding: var(--space-2) var(--space-3);
+  }
+
+  .lookup-form {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .lookup-form .btn {
+    width: 100%;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 900px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .server-card__top {
+    align-items: center;
+  }
+}
