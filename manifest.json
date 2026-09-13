@@ -1,0 +1,22 @@
+{
+  "name": "FiveM Tracker",
+  "short_name": "FiveM Tracker",
+  "description": "Track FiveM servers in real time — live players, ping, and capacity.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0B0E14",
+  "theme_color": "#0B0E14",
+  "icons": [
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

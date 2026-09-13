@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FiveM Tracker — Track FiveM servers in real time</title>
+  <meta name="description" content="Free, open-source FiveM server tracker: live players, ping, capacity, favourites and session statistics. No account, no cost." />
+  <link rel="icon" type="image/png" href="assets/icons/icon-192.png" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#0b0e14" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/themes.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="topbar__inner">
+        <a class="brand" href="#/">
+          <img src="assets/logo.svg" alt="" width="28" height="28" />
+          <span class="brand__name">FiveM Tracker</span>
+        </a>
+        <div class="topbar__actions">
+          <div class="theme-toggle" role="group" aria-label="Theme">
+            <button type="button" data-theme-choice="dark" aria-pressed="false" aria-label="Dark theme">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button type="button" data-theme-choice="light" aria-pressed="false" aria-label="Light theme">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
+            <button type="button" data-theme-choice="system" aria-pressed="false" aria-label="System theme">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 20h8M12 16v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <div id="view-root"></div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <span>FiveM Tracker is an independent open-source project, not affiliated with Cfx.re or Rockstar Games.</span>
+        <span>
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+          · MIT Licensed
+        </span>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
